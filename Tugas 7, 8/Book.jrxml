@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="383a32bc-6cfe-46b0-9b9b-1d20c9711c8c">
+	<property name="ireport.zoom" value="1.2100000000000002"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM buku]]>
+	</queryString>
+	<field name="isbn" class="java.lang.String"/>
+	<field name="judul_buku" class="java.lang.String"/>
+	<field name="tahun_terbit" class="java.lang.String"/>
+	<field name="penerbit" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="92" splitType="Stretch">
+			<staticText>
+				<reportElement x="110" y="0" width="335" height="92" uuid="7d2c9337-8c4e-4236-8c40-493c5f8eeb93"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+					<font fontName="Calisto MT" size="28" isBold="true"/>
+				</textElement>
+				<text><![CDATA[POJOK BACA PRODI SISTEM INFORMASI]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="66" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="110" y="17" width="384" height="37" uuid="8c5753cb-66ac-49d3-bbbf-8554da7282da"/>
+				<textElement>
+					<font fontName="Bookman Old Style" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATA BUKU ANGKATAN 2022]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="22" width="132" height="39" uuid="5cbcb8b6-98b0-4463-9b3d-a8ceab10af10"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[ISBN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="19" width="130" height="42" uuid="dba36382-cc4f-471f-9ada-c607955422bb"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[PENERBIT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="264" y="19" width="147" height="42" uuid="ef484858-7947-4787-8339-0e224b54c322"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[TAHUN TERBIT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="132" y="19" width="132" height="42" uuid="57f5ad90-d8c8-427c-b3a6-1a3a49d47bbb"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[JUDUL BUKU]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="50" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="132" height="41" uuid="85ce5e35-fe89-49e5-83aa-bb602c497896"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{isbn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="132" y="0" width="132" height="41" uuid="b5226ac5-86f7-492f-9e59-492c9e34f820"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{judul_buku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="264" y="0" width="147" height="41" uuid="5a5fd111-750e-449b-aa6b-be31eabb30a8"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tahun_terbit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="411" y="0" width="130" height="41" uuid="6166f37a-c540-418d-bcc5-ffd5f69e6f06"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{penerbit}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
