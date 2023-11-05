@@ -32,6 +32,7 @@ iReport adalah utilitas (perkakas) pelaporan, yang dikembangkan di lingkungan Ja
 
 # Tahapan
 Melanjutkan project pertemuan 5, saat ini adalah waktunya membuat tampilan report yang melewati beberapa tahapan di bawah ini:
+
 A. PostgreSQL
 1. membuat database terlebih dahulu pada postgreSQL yang akan di connect ke java netbeans. Disini saya membuat database dengan nama Guru. Lalu membuat tabel dengan perintah query create table identitas.
 
