@@ -8,20 +8,21 @@
 atribut: ISBN, Judul Buku, Tahun Terbit, Penerbit!
 
 **JAWABAN**
-1. a) Abstract class adalah sebuah class setengah jadi (abstrak) yang memuat/memiliki method dan atrribut. Abstract class sebenarnya adalah sebuah class, sehingga memiliki semua sifat dari class biasa (punya konstruktor). Hanya saja sifatnya masih abstrak, karena itu biasanya method kosong/belum di implementasikan. Namun, Abstract class dapat mengimplementasikan method tersebut. Abstract class akan selalu menjadi superclass / hirarki tertinggi dari subclass-subclass-nya. Jadi, abstract class merupakan class yang tidak dibuat instan sebelum diturunkan.
+1.
+a) Abstract class adalah sebuah class setengah jadi (abstrak) yang memuat/memiliki method dan atrribut. Abstract class sebenarnya adalah sebuah class, sehingga memiliki semua sifat dari class biasa (punya konstruktor). Hanya saja sifatnya masih abstrak, karena itu biasanya method kosong/belum di implementasikan. Namun, Abstract class dapat mengimplementasikan method tersebut. Abstract class akan selalu menjadi superclass / hirarki tertinggi dari subclass-subclass-nya. Jadi, abstract class merupakan class yang tidak dibuat instan sebelum diturunkan.
 Contoh:
 public abstract class Janin () {Janin b = new Janin [ini salah], yang benar adalah menggunakan extends.
-
 b) Interface merupakan sebuah definisi method yang umum yang dapat menghubungkan class-class yang berbeda. Dengan kata lain, interface memungkinkan kita mengimplementasikan method yang sama terhadap class yang tidak ada hubungan sama sekali (tidak dalam satu hirarki). Oleh karena itu interface bukanlah sebuah class, walaupun memiliki ciri yang serupa dengan abstract class.
 Contoh: membuat hewan > ular > menggigit > kering (tidak mengeluarkan bisa) / basah (mengeluarkan bisa).
 
-2. a) Override: Override merujuk pada penggunaan kembali (menggantikan) metode yang sudah didefinisikan dalam kelas induk (kelas basis) dalam kelas turunannya. Ini digunakan untuk mengganti implementasi metode yang sudah ada dalam kelas dasar. Nah, biasanya override terjadi dalam hubungan warisan antara kelas dasar (superclass) dan kelas turunan (subclass).
+2.
+a) Override: Override merujuk pada penggunaan kembali (menggantikan) metode yang sudah didefinisikan dalam kelas induk (kelas basis) dalam kelas turunannya. Ini digunakan untuk mengganti implementasi metode yang sudah ada dalam kelas dasar. Nah, biasanya override terjadi dalam hubungan warisan antara kelas dasar (superclass) dan kelas turunan (subclass).
 Contoh: dalam kelas dasar ada metode hitungLuas() yang di override dalam kelas turunan dengan implementasi yang berbeda untuk menghitung luas berdasarkan jenis bentuk yang berbeda (misalnya, persegi dan lingkaran).
-
 b) Overload: Overload merujuk pada definisi ulang metode dengan nama yang sama dalam sebuah kelas, tetapi dengan parameter yang berbeda. Ini digunakan untuk memiliki beberapa versi metode dengan nama yang sama tetapi berbeda dalam jumlah atau jenis parameter. Biasanya overlaod terjadi dalam satu kelas yang sama, dimana metode dengan nama yang sama didefinisikan dengan parameter yang berbeda.
 Contoh: dalam kelas yang sama, ada beberapa metode dengan nama jumlah (int a, int b) yang menerima parameter berbeda, seperti jumlah (int a) dan jumlah(int a, int b, int c).
 
-3. a) Public: dapat diakses/dipanggil dari mana saja, baik dari dalam kelas itu sendiri, atau kelas lain dalam paket yang sama. Namun, jika terletak pada package yang berbeda, maka wajib menggunakan import agar bisa di run.
+3.
+a) Public: dapat diakses/dipanggil dari mana saja, baik dari dalam kelas itu sendiri, atau kelas lain dalam paket yang sama. Namun, jika terletak pada package yang berbeda, maka wajib menggunakan import agar bisa di run.
 b) Protected: hanya dapat diakses dari kelas itu sendiri dan juga dari kelas turunan (subclass) yang ada dalam paket yang sama atau di paket yang berbeda.
 c) Private: hanya dapat diakses dari dalam kelas itu sendiri. Mereka tidak dapat diakses dari kelas lain, bahkan kelas turunan sekalipun.
 
