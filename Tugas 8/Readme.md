@@ -1,9 +1,6 @@
 # Persistence
 Persistence adalah pengembangan objek dengan menggunakan basis data tanpa harus mengkodekan koneksi manual ke database.
 
-# Source Code
-Source code persistence untuk insert, update, delete, dan cetak dapat dilihat pada tombol simpan, update, hapus, dan cetak pada file Class UtsBuku.java
-
 # Tahapan
 1. Membuat source code dari class yang akan diturukan, yaitu class Buku.
 2. Membuat source code dari persistance yaitu Buku_1
